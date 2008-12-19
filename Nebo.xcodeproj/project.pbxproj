@@ -15,6 +15,8 @@
 		C9123F080EFC3A110090D20F /* JSCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9123F070EFC3A110090D20F /* JSCocoa.framework */; };
 		C9123F0B0EFC3A340090D20F /* ControlMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = C9123F0A0EFC3A340090D20F /* ControlMapping.m */; };
 		C9123F2A0EFC41040090D20F /* JSCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9123F070EFC3A110090D20F /* JSCocoa.framework */; };
+		C9123F820EFC45010090D20F /* PyMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9123F810EFC45010090D20F /* PyMIDI.framework */; };
+		C9123F830EFC45090090D20F /* PyMIDI.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9123F810EFC45010090D20F /* PyMIDI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,13 @@
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* JSCocoa.framework */;
 			remoteInfo = JSCocoa;
 		};
+		C9123F7E0EFC44F60090D20F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9123F7A0EFC44F60090D20F /* PyMIDI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* PyMIDI.framework */;
+			remoteInfo = PyMIDI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C9123F830EFC45090090D20F /* PyMIDI.framework in Copy Frameworks */,
 				C9123F2A0EFC41040090D20F /* JSCocoa.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -58,6 +68,8 @@
 		C9123F070EFC3A110090D20F /* JSCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSCocoa.framework; path = ../../Cocoa/frameworks/jscocoa/JSCocoa/JSCocoa/build/Debug/JSCocoa.framework; sourceTree = SOURCE_ROOT; };
 		C9123F090EFC3A340090D20F /* ControlMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlMapping.h; sourceTree = "<group>"; };
 		C9123F0A0EFC3A340090D20F /* ControlMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlMapping.m; sourceTree = "<group>"; };
+		C9123F7A0EFC44F60090D20F /* PyMIDI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PyMIDI.xcodeproj; path = ../PyMIDI/PyMIDI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C9123F810EFC45010090D20F /* PyMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PyMIDI.framework; path = ../PyMIDI/build/Debug/PyMIDI.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				C9123F080EFC3A110090D20F /* JSCocoa.framework in Frameworks */,
+				C9123F820EFC45010090D20F /* PyMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9123F810EFC45010090D20F /* PyMIDI.framework */,
 				C9123F070EFC3A110090D20F /* JSCocoa.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -114,6 +128,7 @@
 		29B97314FDCFA39411CA2CEA /* Nebo */ = {
 			isa = PBXGroup;
 			children = (
+				C9123F7A0EFC44F60090D20F /* PyMIDI.xcodeproj */,
 				C9123F010EFC3A080090D20F /* JSCocoa.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -160,6 +175,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C9123F7B0EFC44F60090D20F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9123F7F0EFC44F60090D20F /* PyMIDI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +220,10 @@
 					ProductGroup = C9123F020EFC3A080090D20F /* Products */;
 					ProjectRef = C9123F010EFC3A080090D20F /* JSCocoa.xcodeproj */;
 				},
+				{
+					ProductGroup = C9123F7B0EFC44F60090D20F /* Products */;
+					ProjectRef = C9123F7A0EFC44F60090D20F /* PyMIDI.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -211,6 +238,13 @@
 			fileType = wrapper.framework;
 			path = JSCocoa.framework;
 			remoteRef = C9123F050EFC3A080090D20F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9123F7F0EFC44F60090D20F /* PyMIDI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PyMIDI.framework;
+			remoteRef = C9123F7E0EFC44F60090D20F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -268,6 +302,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Cocoa/frameworks/jscocoa/JSCocoa/JSCocoa/build/Debug\"",
+					"\"$(SRCROOT)/../PyMIDI/build/Debug\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -289,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Cocoa/frameworks/jscocoa/JSCocoa/JSCocoa/build/Debug\"",
+					"\"$(SRCROOT)/../PyMIDI/build/Debug\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
